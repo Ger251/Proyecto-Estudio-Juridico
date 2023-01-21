@@ -1,42 +1,32 @@
-*{
+*{ 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
-
 html{
     @media screen and (max-width:540px) {
-        font-size: 12px
-       
-        
+        font-size: 12px               
     }
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
- }
+}
  .Navegacion{
     background-color: white;
- }
+}
 .Contenedor{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; 
-   
-
+    flex-wrap: wrap;
 }
-
 .Logo{
-    background-image: url(/Imagenes/LOGO.png);
-    width: 300px;
-    height: 150px;
-    box-shadow: 5px 8px 12px black;
+    background-image: url(/Imagenes/Logofinal.jpg);
+    width: 500px;
+    height: 100px;
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;   
     flex-wrap: wrap; 
-    margin: 5px;
-
-      
+    margin: 5px;      
 } 
 .NavLetras{
     display: flex;
@@ -45,10 +35,7 @@ html{
     align-items: center;
     justify-content: center;
     font-weight: 600;
-    flex-wrap: wrap; 
-    
-    
-    
+    flex-wrap: wrap;    
 }
 
 .UlNav{
@@ -57,53 +44,48 @@ html{
     list-style-type: none;
     display: flex;  
     justify-content:space-around;  
-    align-items: center;
-          
+    align-items: center;          
 }
 .UlNav a{
     font-family: 'Barlow', sans-serif; 
     text-decoration: none;
     align-items: center;
     color: #a79f8d;
-    font-size: medium;
-    
-    margin: 10px;
-    
+    font-size: medium;    
+    margin: 10px;   
 }
 
 .Nav-Activo{
-       
-    
     height: 100%;
     text-transform: uppercase;
     border-bottom: 3px solid #000;
     display: flex;
     align-items: center;
     flex-grow: 1;
-    justify-content: center;
-
-    
-    
+    justify-content: center;   
 }
-
-
 .Nav-A{
     height: 100%;  
     display: flex;
     align-items: center;    
     flex-grow: 1;
     justify-content: center;
-    
+    text-transform:uppercase;   
 }
-.Nav-Activo:hover{
+/*Nav-A ::first-letter{
+    text-transform: uppercase;
+}*/
+
+.Nav-Activo:hover {
     background-color: #c5c2ba;
     cursor: pointer;
-    
+    text-transform: uppercase;    
 }
 .Nav-A:hover{
     background-color: #c5c2ba;
     cursor: pointer;
-    
+    text-transform: uppercase;    
+
 }
 
 
@@ -118,13 +100,13 @@ html{
 .Grande{
     width: 100%;
     overflow: hidden;
-    height: 500px;
+    height: 450px;
 }
 
 .Carrusel-Contendor{
     
     width: 300%;
-    height: 500px;
+    height: 450px;
     /*overflow: hidden;*/
     display: flex;
     transition: 1s;
@@ -137,7 +119,7 @@ html{
    width: 100%;
    height:100%;
    background-position:right ;
-   background-image: url(/Imagenes/Techo.jpg);
+   background-image: url(/Imagenes/balanza.jpg);
    background-size: cover;
    justify-content:center;
    justify-content: space-around;
@@ -152,7 +134,7 @@ html{
     width: 100%;
     height:100%;
     background-position: center ;
-    background-image: url(/Imagenes/Edificio.jpg);
+    background-image: url(/Imagenes/Martillo.jpg);
     background-size: cover;
     justify-content:center;
     justify-content: space-around;
@@ -166,13 +148,14 @@ html{
     width: 100%;
     height:100%;
     background-position: center ;
-    background-image: url(/Imagenes/Justicia.jpg);
-    background-size: contain;
+    background-image: url(/Imagenes/sellojpg.jpg);
+    background-size: cover;
     justify-content:center;
     justify-content: space-around;
     display: flex;
     flex-direction: column;
     align-items: center;
+
    
  }
 .FlechaI{
@@ -214,16 +197,21 @@ html{
 }
 
 .LetraDi2{
-    color: rgb(148, 217, 240);    
+        
     text-align:center;
-    text-shadow: 0 0 8px black;
+    
     font-size: 35px;
+     
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif Black; 
+    font-weight: bold; 
+    color: #fff; 
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
     
 }
 .Letra2Di2{
-    color: rgb(241, 233, 233);    
+    color:  rgb(252, 246, 243); 
     text-align:center;
-    text-shadow: 0 0 8px black;
+    
     text-decoration: beige;
     padding: 30px 50px;
     border-style: solid;
@@ -253,8 +241,9 @@ html{
 .LetraH1{
     text-align: center;
     margin-bottom: 1.5%;    
-    color: #bcb095; 
+    color: #a59d9d; 
     font-family: 'Roboto', sans-serif;
+    font-weight: 600;
    
     
 }
@@ -374,7 +363,7 @@ html{
 
 
 .Cont3{
-    display: inline-flex;
+    /* display: inline-flex;*/
     flex-direction: column;
     color: #a79f8d;
     font-weight: 300;
@@ -499,7 +488,7 @@ html{
  .SecFoto{
        
     width:100%;
-    height:70vh;
+    height:90vh;
     
    
  }
@@ -521,6 +510,7 @@ html{
     background-color: #474747;
     justify-content:center;
     width: 100%;
+    min-height: 40vh;
   }
 
   .Foot{
@@ -533,25 +523,41 @@ html{
     
     display: flex;
     justify-content:center;
-    flex-wrap: wrap;
+  
     margin: 30px;
 }
 
+
 .Foot-2{
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    flex-grow: 1;
+    min-width: 25%;
     padding: 30px;
     border: 1px solid #a79f8d;
     color: #bcb095;
     font-family:  serif;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
+    display: flex;
+    flex-direction: column;
     text-align: center;
+   
 }
+@media screen and (max-widht:700px)
+{
+    .Foot-1 { 
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+}
+ 
+
  .Foot-2 a{
     color: white;
-    width: max-content;
-    
+    width: 100%;
+    text-decoration: none;
+   
+    text-justify: center;
  }
 
 
@@ -693,29 +699,31 @@ html{
     .MapaContenedor{
        
         display: flex;
-        height: 60vh;
+        height: 70vh;
         margin-left: 10%;
         margin-right: 10%;
         background-color: #e6e6e6;
         border-radius: 10px;
-        flex-wrap: wrap;
+        justify-content: space-around;
         box-shadow: 0px 0px 5px 1px black;
+        width: auto;
         
 
     }
-    .MapaListaH{
+    .MapaLista{
         
-        width:300px;
+        min-width: 35%;
         
-
-        
+       
         
     }
 
     .Mapa{
         
         flex-grow: 1;
-        margin: 35px 25px 35px 10px; 
+        margin: 50px 25px 35px 10px; 
+        min-width: 35%;
+        min-height: 50vh;
 
 
     }
@@ -749,7 +757,7 @@ html{
         width: 100%;
         height:100%;
         background-position:right ;
-        background-image: url(/Imagenes/icono-tel.png);
+        background-image: url(/Imagenes/Oficina.jpg);
         background-size: cover;
         justify-content:center;
         justify-content: space-around;
@@ -764,7 +772,7 @@ html{
          width: 100%;
          height:100%;
          background-position: center ;
-         background-image: url(/Imagenes/Edificio.jpg);
+         background-image: url(/Imagenes/Papel\ para\ firmar.jpg);
          background-size: cover;
          justify-content:center;
          justify-content: space-around;
@@ -778,13 +786,14 @@ html{
          width: 100%;
          height:100%;
          background-position: center ;
-         background-image: url(/Imagenes/Justicia.jpg);
+         background-image: url(/Imagenes/laptop.jpg);
          background-size: contain;
          justify-content:center;
          justify-content: space-around;
          display: flex;
          flex-direction: column;
          align-items: center;
+         background-size: cover;
         
       }
 
@@ -833,19 +842,25 @@ html{
     margin-top: 10%;
    }
    .Section5imagen1{
-    background-image: url(/Imagenes/LOGO.png);
+    background-image: url(/Imagenes/German.jpg);
     height: 45vh;
     width:100%;
+    background-size: cover;
    }
    .Section5imagen2{
-    background-image: url(/Imagenes/LOGO.png);
+    background-image: url(/Imagenes/fotomujerr.jpg);
     height: 45vh;
     width:100%;
+    background-size: cover;
+    
    }
    .Section5imagen3{
-    background-image: url(/Imagenes/LOGO.png);
+    background-image: url(/Imagenes/JuanCFoto.jpeg);
     height: 45vh;
     width:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
    }
 
    .Section5Membrete h1{
@@ -909,28 +924,36 @@ html{
     
 }
    .UltimaFoto1{
-    background-image:url(/Imagenes/Edificio.jpg);
+    background-image:url(/Imagenes/Estatua1.jpg);
     width: 35vh;
     height: 35vh;
     margin: 20px;
     width: 100px;
     flex-grow: 1;
+    background-size: cover;
+    background-position: center;
     
 }
    .UltimaFoto2{
-    background-image:url(/Imagenes/Edificio.jpg);
+    background-image:url(/Imagenes/cuadros.jpg);
     width: 35vh;
     height: 35vh;
     margin: 20px;
     flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+
     
    }
    .UltimaFoto3{
-    background-image:url(/Imagenes/Edificio.jpg);
+    background-image:url(/Imagenes/laptop2.jpg);
     width: 35vh;
     height: 35vh;
     margin: 20px;
     flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+
    }
    .UltimaTexto{
     width: 70%;
