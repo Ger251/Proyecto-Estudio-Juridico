@@ -1,1011 +1,893 @@
-*{ 
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-html{
-    @media screen and (max-width:540px) {
-        font-size: 12px               
-    }
-    /**-webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent*/
-}
- .Navegacion{
-    background-color: white;
-}
-.Contenedor{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.Logo{
-    background-image: url(/Imagenes/Logofinal.jpg);
-    width: 500px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;   
-    flex-wrap: wrap; 
-    margin: 5px;      
-} 
-.NavLetras{
-    display: flex;
-    width: 60%;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    flex-wrap: wrap;    
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.UlNav{
-    width: 80%;  
-    height: 100%; 
-    list-style-type: none;
-    display: flex;  
-    justify-content:space-around;  
-    align-items: center;          
-}
-.UlNav a{
-    font-family: 'Barlow', sans-serif; 
-    text-decoration: none;
-    align-items: center;
-    color: #a79f8d;
-    font-size: medium;    
-    margin: 10px;   
+html {
+  @media screen and (max-width: 540px) {
+    font-size: 12px;
+  }
 }
 
-.Nav-Activo{
-    height: 100%;
-    text-transform: uppercase;
-    border-bottom: 3px solid #000;
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    justify-content: center;   
+.Navegacion {
+  background-color: white;
 }
-.Nav-A{
-    height: 100%;  
-    display: flex;
-    align-items: center;    
-    flex-grow: 1;
-    justify-content: center;
-    text-transform:uppercase;   
+
+.Contenedor {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-/*Nav-A ::first-letter{
-    text-transform: uppercase;
-}*/
+
+.Logo {
+  background-image: url(/Imagenes/Logofinal.jpg);
+  width: 500px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.NavLetras {
+  display: flex;
+  width: 60%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.UlNav {
+  width: 80%;
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.UlNav a {
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+  align-items: center;
+  color: #a79f8d;
+  font-size: medium;
+  margin: 10px;
+}
+
+.Nav-Activo {
+  height: 100%;
+  text-transform: uppercase;
+  border-bottom: 3px solid #000;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.Nav-A {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  text-transform: uppercase;
+}
 
 .Nav-Activo:hover {
-    background-color: #c5c2ba;
-    cursor: pointer;
-    text-transform: uppercase;    
-}
-.Nav-A:hover{
-    background-color: #c5c2ba;
-    cursor: pointer;
-    text-transform: uppercase;    
-
+  background-color: #c5c2ba;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-
-
-.Una:hover{
-    transition:100ms;
-    transform: scale(1.35);
-    color: #2b2b2b;
+.Nav-A:hover {
+  background-color: #c5c2ba;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-
-.Grande{
-    width: 100%;
-    overflow: hidden;
-    height: 450px;
+.Una:hover {
+  transition: 100ms;
+  transform: scale(1.35);
+  color: #2b2b2b;
 }
 
-.Carrusel-Contendor{
-    
-    width: 300%;
-    height: 450px;
-    /*overflow: hidden;*/
-    display: flex;
-    transition: 1s;
-    transform: translateX(0);
-    
-
-}
-.Di1{
-   position: relative;
-   width: 100%;
-   height:100%;
-   background-position:right ;
-   background-image: url(/Imagenes/balanza.jpg);
-   background-size: cover;
-   justify-content:center;
-   justify-content: space-around;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   
-   
-}
-.Di2{
-    position: relative;
-    width: 100%;
-    height:100%;
-    background-position: center ;
-    background-image: url(/Imagenes/Martillo.jpg);
-    background-size: cover;
-    justify-content:center;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
- }
- .Di3{
-    position: relative;
-    width: 100%;
-    height:100%;
-    background-position: center ;
-    background-image: url(/Imagenes/sellojpg.jpg);
-    background-size: cover;
-    justify-content:center;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-   
- }
-.FlechaI{
-    height: max-content;
-    width: max-content;
-    position: absolute;    
-    margin-right:90%;
-    cursor: pointer;
-    flex-wrap: wrap;
-    
+.Grande {
+  width: 100%;
+  overflow: hidden;
+  height: 450px;
 }
 
-
-.FlechaD{
-   
-    height: max-content;
-    width: max-content;    
-    position: absolute;
-    margin-left: 90%;
-    cursor: pointer;    
-    flex-wrap: wrap;
+.Carrusel-Contendor {
+  width: 300%;
+  height: 450px;
+  display: flex;
+  transition: 1s;
+  transform: translateX(0);
 }
 
+.Di1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: right;
+  background-image: url(/Imagenes/balanza.jpg);
+  background-size: cover;
+  justify-content: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Di2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-image: url(/Imagenes/Martillo.jpg);
+  background-size: cover;
+  justify-content: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Di3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-image: url(/Imagenes/sellojpg.jpg);
+  background-size: cover;
+  justify-content: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FlechaI {
+  height: max-content;
+  width: max-content;
+  position: absolute;
+  margin-right: 90%;
+  cursor: pointer;
+  flex-wrap: wrap;
+  
+}
+
+.FlechaD {
+  height: max-content;
+  width: max-content;
+  position: absolute ;
+  margin-left: 90%;
+  cursor: pointer;
+  flex-wrap: wrap;
+  
+  
+}
+
+.FlechaI li{
+  list-style: none;
+}
 .EnlaceI {
-    background-image: url(/Imagenes/Izquierda.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;   
-    padding:30px 40px;
-}
-.EnlaceD{
-    background-image: url(/Imagenes/Derecha.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;    
-    padding:30px 40px;
+  background-image: url(/Imagenes/Izquierda.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding: 30px 40px;
 }
 
-.LetraDi2{
-        
-    text-align:center;
-    
-    font-size: 35px;
-     
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif Black; 
-    font-weight: bold; 
-    color: #fff; 
-    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-    
-}
-.Letra2Di2{
-    color:  rgb(252, 246, 243); 
-    text-align:center;
-    
-    text-decoration: beige;
-    padding: 30px 50px;
-    border-style: solid;
-    border-color: rgb(252, 246, 243);
-    border-radius: 20px;
-    border-width: 1px;
-    width: 220px;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 700;
-}
-.Letra2Di2:hover{
-    color: rgb(99, 178, 247);
-    transform: scale(1.2);
+.EnlaceD {
+  background-image: url(/Imagenes/Derecha.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding: 30px 40px;
 }
 
-
-.Section1{
-    width: 100%;
-    min-height: 420px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: max-content;
-
-}
-.LetraH1{
-    text-align: center;
-    margin-bottom: 1.5%;    
-    color: #a59d9d; 
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-   
-    
+.LetraDi2 {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif Black;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
-.LetraH2{
-    text-align: center;
-    color: #606060;
-    font-family: 'Roboto', sans-serif;
-    
+.Letra2Di2 {
+  color: rgb(252, 246, 243);
+  text-align: center;
+  text-decoration: beige;
+  padding: 30px 50px;
+  border-style: solid;
+  border-color: rgb(252, 246, 243);
+  border-radius: 20px;
+  border-width: 1px;
+  width: 220px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
-
-
-.Section2{
-    background-color: #474747;
-    width: 100%;
-    padding: 20vh;
+.Letra2Di2:hover {
+  color: rgb(99, 178, 247);
+  transform: scale(1.2);
 }
 
-.Contenedor2{
-    color:white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:center;
-   
-                
+.Section1 {
+  width: 100%;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: max-content;
 }
 
-.ContieneCaja{
-    /**flex: 0 0 33.333333%;
-    max-width: 33.333333%;**/
-    list-style-type: none;
-    margin-right: 50px;
-    /*display: row**/
-    
-}
-.Caja{
-    font-size: 2.4rem;
-    list-style-type: none;
-    display: inline-flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
-    /**list-style-image: url(/Imagenes/lineagris.png);**/
-    
+.LetraH1 {
+  text-align: center;
+  margin-bottom: 1.5%;
+  color: #a59d9d;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 
-.Caja1{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    columns: rgb(88, 86, 86);
-    font-size: 1.2rem;
-    list-style-type: none;
-    display: inline-flex;
-    color: #a79f8d;
-    /**margin-left: 15%;**/
+.LetraH2 {
+  text-align: center;
+  color: #606060;
+  font-family: "Roboto", sans-serif;
 }
 
-.Caja2{
-    
-    margin: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    list-style-type: none;
-    text-align:left;
-    /* display: inline-flex;**/
-    font-size: 1.2rem;
-    
+.Section2 {
+  background-color: #474747;
+  width: 100%;
+  padding: 20vh;
+}
 
-   
-    width: 25%;/**
+.Contenedor2 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ContieneCaja {
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+.Caja {
+  font-size: 2.4rem;
+  list-style-type: none;
+  display: inline-flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+.Caja1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  columns: rgb(88, 86, 86);
+  font-size: 1.2rem;
+  list-style-type: none;
+  display: inline-flex;
+  color: #a79f8d;
+}
+
+.Caja2 {
+  margin: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  list-style-type: none;
+  text-align: left;
+  font-size: 1.2rem;
+  width: 25%;
+  /**
     height:200px;
     flex-basis: 25%;
-    max-width: 33.333333%; **/    
+    max-width: 33.333333%; **/
 }
 
-.Subraya{
-    border-bottom: 1px solid #988b6e;
-    padding: 20px 60px 20px 0px;
+.Subraya {
+  border-bottom: 1px solid #988b6e;
+  padding: 20px 60px 20px 0px;
 }
+
 .Btn1 {
-    border: 1px solid #a79f8d;
-    color: #a79f8d;
-    text-transform: uppercase;
-    Border-radius: 30PX;
-    padding: 12px 35px;
-    overflow: hidden;
-    display: block;
-    letter-spacing: 1PX;
-    outline: none;
-    background: none;
-    float: right;
-    text-decoration: none;
-}
-.Btn1:hover{
-    transform: scale(1.15);
-    background-color: #c5c2ba;
-}
-.NoBullets{
-    list-style-type: none;
-    list-style-image: url(/Imagenes/flecha.png);
-    /**list-style-position: inside;**/
-
+  border: 1px solid #a79f8d;
+  color: #a79f8d;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 12px 35px;
+  overflow: hidden;
+  display: block;
+  letter-spacing: 1px;
+  outline: none;
+  background: none;
+  float: right;
+  text-decoration: none;
 }
 
-.Contenedor3{
-   
-     
-    width: 100%;
-    min-height: 95vh;
-    
+.Btn1:hover {
+  transform: scale(1.15);
+  background-color: #c5c2ba;
+}
+
+.NoBullets {
+  list-style-type: none;
+  list-style-image: url(/Imagenes/flecha.png);
+}
+
+.Contenedor3 {
+  width: 100%;
+  min-height: 95vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e0e0e0;
+  flex-wrap: wrap;
+}
+
+.Cont3 {
+  flex-direction: column;
+  color: #a79f8d;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin: 5%;
+  text-align: left;
+  width: 27%;
+}
+
+.Cont4 {
+  margin: 70px 50x 60px 15px;
+  flex-grow: 1;
+  max-width: 80%;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #474747;
+}
+
+.Form-fondo {
+  margin-top: 70px;
+  background-color: #fff;
+  border: 0.5px solid rgb(102, 102, 102);
+  border-radius: 20px;
+  box-shadow: 0px 0px 13px 3px rgb(0 0 0 / 31%);
+  margin-right: 60px;
+}
+
+.Form1 {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.Form2 {
+  width: 100%;
+  margin: 5px;
+}
+
+.Form3 {
+  padding: 15px;
+}
+
+.Form2 input {
+  display: block;
+  width: 100%;
+  height: 45px;
+  background-color: #c5c2ba;
+  padding: 10px;
+  font-size: medium;
+}
+
+input,
+textarea {
+  background-color: #f5f5f5;
+  border: 0px;
+  height: 120px;
+  width: 100%;
+  padding: 10px;
+  font-size: medium;
+  margin-top: 30px;
+}
+
+.btn-block {
+  background-color: #bcb095;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 12px 35px;
+  overflow: hidden;
+  display: inline-block;
+  font-family: "Barlow", sans-serif;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  height: 45px;
+}
+
+.btn-block:hover {
+  cursor: pointer;
+}
+
+#Contactenos {
+  font-size: 37px;
+  color: #474747;
+  padding: 15px;
+}
+
+#Somos {
+  font-size: 22px;
+  color: #a79f8d;
+  padding-left: 15px;
+}
+
+.SecFoto {
+  width: 100%;
+  height: 90vh;
+  flex-wrap: wrap;
+}
+
+.Dfoto {
+  background-image: url(/Imagenes/LOGOGER.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.Contenedor4 {
+  display: flex;
+  background-color: #474747;
+  justify-content: center;
+  width: 100%;
+  min-height: 40vh;
+  height: max-content;
+}
+
+.Foot {
+  width: 100%;
+  margin: 30px;
+}
+
+.Foot-1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.Foot-2 {
+  flex-grow: 1;
+  min-width: 25%;
+  padding: 30px;
+  border: 1px solid #a79f8d;
+  color: #bcb095;
+  font-family: serif;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media screen and (max-widht: 700px) {
+  .Foot-1 {
+    justify-content: space-between;
     display: flex;
-    justify-content:space-between;
-    background-color: #e0e0e0;
-    
-    flex-wrap: wrap;
-    
-    
-}
-
-
-.Cont3{
-    /* display: inline-flex;*/
     flex-direction: column;
-    color: #a79f8d;
-    font-weight: 300;
-    font-size: 1.3rem;
-    /*line-height: 1.5rem;*/
-    margin: 5%;
-    text-align: left;
-    
-    width: 27%;
-    
- }
- .Cont4 {
-   
-    margin: 70px 50x 60px 15px ;
-    flex-grow: 1;
-    max-width: 80%;
-    
-    font-size: 16px;
-    font-family:  sans-serif;
-    color: #474747;
-    
-   
-    
-
   }
-
-
-
-
- .Form-fondo{
-    margin-top: 70px;
-    background-color: #fff;
-    border: 0.5px solid rgb(102, 102, 102);
-    border-radius: 20px;
-    box-shadow: 0px 0px 13px 3px rgb(0 0 0 / 31%);
-    margin-right:60px ;
-    /*width: 700px;**/
-    
-    
-    
- }
- 
-    .Form1{
-        padding: 15px;
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .Form2{
-       
-        width: 100%;
-        margin: 5px;
-     }
-     
-   
-
-    .Form3{
-       padding: 15px;
-    }
-
-    .Form2 input {
-    
-        display: block;
-        width: 100%;
-        height: 45px;
-        background-color: #c5c2ba;
-        padding: 10px;
-        font-size: medium;
-    }    
-    
-
-    
-     input, textarea {
-        background-color: #f5f5f5;
-        border: 0px;
-        height: 120px ;
-        width: 100%;
-        padding: 10px ;
-        font-size: medium;
-        margin-top: 30px;
-              
-    }
-
-    .btn-block {
-        background-color: #bcb095;
-        color: #fff;
-        text-transform: uppercase;
-        Border-radius: 30PX;
-        padding: 12px 35px;
-        overflow: hidden;
-        display: inline-block;
-        font-family: 'Barlow', sans-serif;
-        letter-spacing: 1PX;
-        border: none;
-        outline: none;
-        height: 45px;
-    }
-
-    .btn-block:hover{
-        cursor: pointer;
-
-    }
-
- #Contactenos{
-    font-size: 37px;
-    color: #474747;
-    padding: 15px;
-}
-  
- 
- #Somos {
-    font-size: 22px;
-    color: #a79f8d;
-    padding-left: 15px;
-    
-   
 }
 
- 
+.Foot-2 a {
+  color: white;
+  width: 100%;
+  text-decoration: none;
 
- .SecFoto{
-       
-    width:100%;
-    height: 90vh;
-    flex-wrap: wrap;
-    
-   
- }
-.Dfoto{
-    background-image: url(/Imagenes/LOGOGER.jpeg);
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-attachment: fixed;
-    background-size:cover;
-    width: 100%;
-    height: 100%;
-    
-
-}
-  
-
-  .Contenedor4 {
-    display: flex;
-    background-color: #474747;
-    justify-content:center;
-    width: 100%;
-    min-height: 40vh;
-    height: max-content;
-  }
-
-  .Foot{
-    width: 100%;
-    margin: 30px;
+  text-justify: center;
 }
 
-  
-.Foot-1{
-    
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    margin: 30px;
+.Legales {
+  background-color: #2b2b2b;
+  color: #f5f5f5;
+  padding: 20px;
+  font-size: 12px;
 }
 
-
-.Foot-2{
-    flex-grow: 1;
-    min-width: 25%;
-    padding: 30px;
-    border: 1px solid #a79f8d;
-    color: #bcb095;
-    font-family:  serif;
-    align-items: center;
-    justify-content: center;   
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-   
-}
-@media screen and (max-widht:700px)
-{
-    .Foot-1 { 
-        justify-content: space-between;
-        display: flex;
-        flex-direction: column;
-    }
-}
- 
-
- .Foot-2 a{
-    color: white;
-    width: 100%;
-    text-decoration: none;
-   
-    text-justify: center;
- }
-
-
-  .Legales{
-    background-color: #2b2b2b;
-    color: #f5f5f5;
-    padding: 20px;
-    font-size: 12px;
-  }
-.LegalesSn{
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.LegalesSn span a{
-    color: #f5f5f5;
-    font-size: 12px;
-    font-family: 'Merriweather', serif;
-    opacity: 0.6;
+.LegalesSn {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.ContAreas{
-    background-color: #e0e0e0;
-    min-height: 50rem;
-    
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    
-    
-   
-   
-    
-}
-.ContAreasDivisor1{
-   
-    
-    
-    display: flex;
-   
-    margin-left: 15%;
-    margin-right: 15%;
-    border-bottom:1px solid rgb(151, 143, 143); 
-    margin-top:5%; 
-    flex-wrap: wrap;  
-    
-}
-.ContAreasDivisor2{
-    
-    display: flex;
-  
-    padding-top: 30px;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 10%;
-    flex-wrap: wrap;
-    
-    
-    
+.LegalesSn span a {
+  color: #f5f5f5;
+  font-size: 12px;
+  font-family: "Merriweather", serif;
+  opacity: 0.6;
 }
 
-.ContAreas1{
-    
-   
-    
-    max-width:33% ;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    min-width: 40vh;
-     
+.ContAreas {
+  background-color: #e0e0e0;
+  min-height: 50rem;
+
+  display: flex;
+  flex-direction: column;
+  height: max-content;
 }
 
-.ContAreasUl{
-    
-    list-style-type: square;
-    padding: 2.3em ;
-    color: #565656;
-    width: 100%;
-    
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
+.ContAreasDivisor1 {
+  display: flex;
 
+  margin-left: 15%;
+  margin-right: 15%;
+  border-bottom: 1px solid rgb(151, 143, 143);
+  margin-top: 5%;
+  flex-wrap: wrap;
 }
 
+.ContAreasDivisor2 {
+  display: flex;
 
-.ContAreasH3{
-    
-    color: #474747;
-    font-size: 25px;
-    
-    text-align: right;
-    font-family: 'Roboto', sans-serif;
-    padding: 20px;
-    padding-top: 10px;
-
-    
-}
-#Malito{
-    padding: 10px 0px 0px 0px;
+  padding-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 10%;
+  flex-wrap: wrap;
 }
 
-#Malita{
-    padding-bottom: 20px;
-}
-.Areas{
-    width: 80%;
-    height: 8rem;
-}
-.Areas1{
-    align-items: center;
-    padding:35px;
-    color: #606060;
-    font-size: 20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.ContAreas1 {
+  max-width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 40vh;
 }
 
+.ContAreasUl {
+  list-style-type: square;
+  padding: 2.3em;
+  color: #565656;
+  width: 100%;
 
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
+
+.ContAreasH3 {
+  color: #474747;
+  font-size: 25px;
+
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+#Malito {
+  padding: 10px 0px 0px 0px;
+}
+
+#Malita {
+  padding-bottom: 20px;
+}
+
+.Areas {
+  width: 80%;
+  height: 8rem;
+}
+
+.Areas1 {
+  align-items: center;
+  padding: 35px;
+  color: #606060;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
 .ContFoto {
-    background-image: url(/Imagenes/Edificio.jpg);
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-attachment: fixed;
-    background-size:cover;
-    max-width: 100%;
-    min-height: 90vh;
-    min-width: 200px;
-   
-    
+  background-image: url(/Imagenes/Edificio.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 90vh;
+  min-width: 200px;
 }
 
-.SecFotoH2{
-        flex-wrap: wrap;
-        padding: 40px;
-        margin-left: 10%;
-        color: #fafaf7;
-        font-size: 27px;
-        font-weight: 600;
-        font-style: italic;
-        padding-left: 0;
-        text-shadow: #474747;
-    }
-    
-    .MapaContenedor{
-       
-        display: flex;
-        height: 70vh;
-        margin-left: 10%;
-        margin-right: 10%;
-        background-color: #e6e6e6;
-        border-radius: 10px;
-        justify-content: space-around;
-        box-shadow: 0px 0px 5px 1px black;
-        width: auto;
-        flex-wrap: wrap;
-        overflow: scroll;
-
-    }
-    .MapaLista{
-        
-        min-width: 35%;
-        
-       
-        
-    }
-
-    .Mapa{
-        
-        flex-grow: 1;
-        margin: 50px 25px 35px 10px; 
-        min-width: 35%;
-        min-height: 50vh;
-
-
-    }
-
-    #Mapa{
-        height: 100%;
-        width: 100%;
-    }
-    .MapaListaH  ul li {
-        text-decoration: rgb(114, 114, 113);
-        color: rgb(119, 117, 117);
-        text-shadow: #000;
-        display:flex;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 5px;
-        margin: 3%;  
-        border-bottom: 1px solid rgb(119, 117, 117);  
-        align-items: center;
-    }
-    .MapaListaH  ul li a{
-        text-decoration: beige;
-        color: rgb(119, 117, 117);
-        text-shadow: rgb(82, 80, 80);
-        
-
-        
-    }
-    .Di4{
-        position: relative;
-        width: 100%;
-        height:100%;
-        background-position:right ;
-        background-image: url(/Imagenes/Oficina.jpg);
-        background-size: cover;
-        justify-content:center;
-        justify-content: space-around;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        
-     }
-     .Di5{
-         position: relative;
-         width: 100%;
-         height:100%;
-         background-position: center ;
-         background-image: url(/Imagenes/Papel\ para\ firmar.jpg);
-         background-size: cover;
-         justify-content:center;
-         justify-content: space-around;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         
-      }
-      .Di6{
-         position: relative;
-         width: 100%;
-         height:100%;
-         background-position: center ;
-         background-image: url(/Imagenes/laptop.jpg);
-         background-size: contain;
-         justify-content:center;
-         justify-content: space-around;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         background-size: cover;
-        
-      }
-    
-  
-       
-  .Section5{
-    height: max-content;
-    background-color: #e0e0e0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-   }
-   .Section5Contenedor{
-    display: flex;
-    /*width: 80%;
-    height: 100%;
-    justify-content: space-between;
-    
-    align-items: center;
-    align-items:flex-start;*/
-    flex-wrap: wrap;
-    justify-content: space-around;
-     width: 100%;
-    
-   }
-   .Section5Letra{
-        
-    width: 23%;
-    padding: 40px;
-    font-size: 25px;
-    margin-top: 10%;
-   
-    color: #474747;
-   }
-   .agrego{ 
-       display: flex;
-       justify-content: space-between;
-       flex-wrap: wrap;
-       flex-grow: 1;
-       margin-bottom: 3%;
-       
-      
-    
-
-   }
-   .Section5Membrete{
-    background-color: #bcb095;
-    min-height: 20vh;
-    justify-content: space-between;
-    width: 100%;   
-    
-   }
-
-   .Section5Fotos{
-    box-shadow: 0 0  8px rgb(110, 110, 110);
-    border-radius: 15px;
-    width: 250px;
-    margin-left: 3%;
-    margin-top: 10%;
-   }
-   .Section5imagen1{
-    background-image: url(/Imagenes/Gerfoto.jpeg);
-    height: 45vh;
-    width:100%;
-    background-size: cover;
-    min-height: 280px;
-   }
-   .Section5imagen2{
-    background-image: url(/Imagenes/Gabriel.jpeg);
-    height: 45vh;
-    width:100%;
-    background-size: cover;
-    min-height: 280px;
-    
-   }
-   .Section5imagen3{
-    background-image: url(/Imagenes/JuanCFoto.jpeg);
-    height: 45vh;
-    width:100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 280px;
-
-   }
-
-   .Section5Membrete h1{
-    text-align: center;
-    font-size: 3.5vh;
-    font-family:serif;
-    font-weight: 300;
-    color: #212529;
-    padding-top: 15px;
-   }
-
-   .Section5Membrete h2{
-    text-align: center;
-    font-size: 3.5vh;
-    font-family:serif;
-    font-weight: 500;
-    color: #212529;
-    padding: 3px;
-
-   }
-
-   .Section5Membrete h3{
-    text-align: center;
-    font-size: 2vh;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 250;
-    color: #ffffff;
-    padding: 3px;
-    text-transform: uppercase; 
-    margin-top: 1%;  
-   }
-   
-   
-   .Ultima{
-    background-color: #565656;
-    width: 100%;
-    min-height: 150vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: max-content;
-
-    
-    
-
-   }
-   .ContenedorUltima{
-      
-    display: flex; 
-    flex-direction: column;
-    
-    justify-content: space-between;
-    width: 80%;
-    height: 80%;
-
-}  
-    
-   .ContenedorUltima1{
-    width: 100%;
-    border-bottom: solid 0.6px #212529;
-    height: 100%;
-    display:flex ;
-    flex-wrap: wrap;
-    
-
-    
+.SecFotoH2 {
+  flex-wrap: wrap;
+  padding: 40px;
+  margin-left: 10%;
+  color: #fafaf7;
+  font-size: 27px;
+  font-weight: 600;
+  font-style: italic;
+  padding-left: 0;
+  text-shadow: #474747;
 }
-   .UltimaFoto1{
-    background-image:url(/Imagenes/Estatua1.jpg);
-    width: 35vh;
-    height: 35vh;
-    margin: 20px;
-    width: 100px;
-    flex-grow: 1;
-    background-size: cover;
-    background-position: center;
-    
+
+.MapaContenedor {
+  display: flex;
+  height: 70vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  justify-content: space-around;
+  box-shadow: 0px 0px 5px 1px black;
+  width: auto;
+  flex-wrap: wrap;
+  overflow: scroll;
 }
-   .UltimaFoto2{
-    background-image:url(/Imagenes/cuadros.jpg);
-    width: 35vh;
-    height: 35vh;
-    margin: 20px;
-    flex-grow: 1;
-    background-size: cover;
-    background-position: center;
 
-    
-   }
-   .UltimaFoto3{
-    background-image:url(/Imagenes/laptop2.jpg);
-    width: 35vh;
-    height: 35vh;
-    margin: 20px;
-    flex-grow: 1;
-    background-size: cover;
-    background-position: center;
+.MapaLista {
+  min-width: 35%;
+}
 
-   }
-   .UltimaTexto{
-    width: 70%;
-     
-    margin: 20px;
-   }
-   .UltimaTexto h2{
-    
-    padding: 20px;
-    font-family: 'Roboto', sans-serif;
-   
-   }
-   .UltimaTexto h3{
-    
-    padding: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 400;
-    color: #bcb095;
-    font-size: 16px;
-   }
+.Mapa {
+  flex-grow: 1;
+  margin: 50px 25px 35px 10px;
+  min-width: 35%;
+  min-height: 50vh;
+}
+
+#Mapa {
+  height: 100%;
+  width: 100%;
+}
+
+.MapaListaH ul li {
+  text-decoration: rgb(114, 114, 113);
+  color: rgb(119, 117, 117);
+  text-shadow: #000;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  margin: 3%;
+  border-bottom: 1px solid rgb(119, 117, 117);
+  align-items: center;
+}
+
+.MapaListaH ul li a {
+  text-decoration: beige;
+  color: rgb(119, 117, 117);
+  text-shadow: rgb(82, 80, 80);
+}
+
+.Di4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: right;
+  background-image: url(/Imagenes/Oficina.jpg);
+  background-size: cover;
+  justify-content: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Di5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-image: url(/Imagenes/Papel\ para\ firmar.jpg);
+  background-size: cover;
+  justify-content: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Di6 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-image: url(/Imagenes/laptop.jpg);
+  background-size: contain;
+  justify-content: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+}
+
+.Section5 {
+  height: max-content;
+  background-color: #e0e0e0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Section5Contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Section5Letra {
+  width: 23%;
+  padding: 40px;
+  font-size: 25px;
+  margin-top: 10%;
+  color: #474747;
+}
+
+.agrego {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin-bottom: 3%;
+}
+
+.Section5Membrete {
+  background-color: #bcb095;
+  min-height: 20vh;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Section5Fotos {
+  box-shadow: 0 0 8px rgb(110, 110, 110);
+  border-radius: 15px;
+  width: 250px;
+  margin-left: 3%;
+  margin-top: 10%;
+}
+
+.Section5imagen1 {
+  background-image: url(/Imagenes/Gerfoto.jpeg);
+  height: 45vh;
+  width: 100%;
+  background-size: cover;
+  min-height: 280px;
+}
+
+.Section5imagen2 {
+  background-image: url(/Imagenes/Gabriel.jpeg);
+  height: 45vh;
+  width: 100%;
+  background-size: cover;
+  min-height: 280px;
+}
+
+.Section5imagen3 {
+  background-image: url(/Imagenes/JuanCFoto.jpeg);
+  height: 45vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 280px;
+}
+
+.Section5Membrete h1 {
+  text-align: center;
+  font-size: 3.5vh;
+  font-family: serif;
+  font-weight: 300;
+  color: #212529;
+  padding-top: 15px;
+}
+
+.Section5Membrete h2 {
+  text-align: center;
+  font-size: 3.5vh;
+  font-family: serif;
+  font-weight: 500;
+  color: #212529;
+  padding: 3px;
+}
+
+.Section5Membrete h3 {
+  text-align: center;
+  font-size: 2vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 250;
+  color: #ffffff;
+  padding: 3px;
+  text-transform: uppercase;
+  margin-top: 1%;
+}
+
+.Ultima {
+  background-color: #565656;
+  width: 100%;
+  min-height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+}
+
+.ContenedorUltima {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  width: 80%;
+  height: 80%;
+}
+
+.ContenedorUltima1 {
+  width: 100%;
+  border-bottom: solid 0.6px #212529;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.UltimaFoto1 {
+  background-image: url(/Imagenes/Estatua1.jpg);
+  width: 35vh;
+  height: 35vh;
+  margin: 20px;
+  width: 100px;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.UltimaFoto2 {
+  background-image: url(/Imagenes/cuadros.jpg);
+  width: 35vh;
+  height: 35vh;
+  margin: 20px;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.UltimaFoto3 {
+  background-image: url(/Imagenes/laptop2.jpg);
+  width: 35vh;
+  height: 35vh;
+  margin: 20px;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.UltimaTexto {
+  width: 70%;
+
+  margin: 20px;
+}
+
+.UltimaTexto h2 {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.UltimaTexto h3 {
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  color: #bcb095;
+  font-size: 16px;
+}
