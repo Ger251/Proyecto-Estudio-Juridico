@@ -20,7 +20,7 @@ document.getElementById('Izquierda2').onclick = function mover (){
 document.getElementById('Izquierda3').onclick = function mover (){
 
     console.log("capuramos el click");
-    document.getElementById('Mov').style.transform = 'translateX(33.333333 %)';
+    document.getElementById('Mov').style.transform = 'translateX(-33.33333333%)';
 
 }
 
