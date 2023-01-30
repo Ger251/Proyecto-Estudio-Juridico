@@ -1,21 +1,45 @@
-let Contenedor =  document.getElementById('Mov');
-let Izquierda2 = document.getElementById('Izquierda2');
-let Izquierda3 = document.getElementById('Izquierda3');
-let Derecha1 = document.getElementById('Derecha1');
-let Derecha2 = document.getElementById('Derecha2');
-let mover = function (){
-    Contenedor.style.transform = 'translateX(-33.33333333%)';
-} ;
-Izquierda2.onclick = function  (){
-    Contenedor.style.transform = 'translateX(0%)';
+const slider = document.querySelector("#slider");
+let sliderSection = document.querySelectorAll(".slider-section");
+let sliderSectionLast = sliderSection[sliderSection.length - 1];
+const btnLeft = document.querySelector("#btn-left");
+const btnRigth = document.querySelector("#btn-rigth");
+
+
+slider.insertAdjacentElement('afterbegin',sliderSectionLast);
+
+
+function MoverDer(){
+    let sliderSectionFirst = document.querySelectorAll(".slider-section")[0];
+    slider.style.marginLeft = "-200%";
+    slider.style.transition = "all 0.5s";
+    setTimeout(function(){
+        slider.style.transition = "none";
+        slider.insertAdjacentElement("beforeend",sliderSectionFirst);
+        slider.style.marginLeft = "-100%"
+    } , 500) ;
 }
-Izquierda3.onclick = function  (){ 
-  mover();
+
+btnRigth.addEventListener('click', function(){
+    MoverDer();
+} );
+
+function MoverIzq(){
+
+    let sliderSection = document.querySelectorAll(".slider-section");
+    let sliderSectionLast = sliderSection[sliderSection.length - 1];
+    slider.style.marginLeft = "0";
+    slider.style.transition = "all 0.5s";
+    setTimeout(function(){
+        slider.style.transition = "none";
+        slider.insertAdjacentElement('afterbegin',sliderSectionLast)
+        slider.style.marginLeft = "-100%"
+    } , 500) ;
 }
-Derecha1.onclick = function  (){
-   mover();
-}
-Derecha2.onclick = function (){
-    Contenedor.style.transform = 'translateX(-66.6666666666%)';
-}
+btnLeft.addEventListener('click', function(){
+    MoverIzq();
+} );
+
+setInterval(function(){
+    MoverDer;
+},5000);
 
