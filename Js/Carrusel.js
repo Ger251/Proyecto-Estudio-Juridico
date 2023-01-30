@@ -40,6 +40,6 @@ btnLeft.addEventListener('click', function(){
 } );
 
 setInterval(function(){
-    MoverDer;
-},5000);
+    MoverDer();
+},8000);
 
