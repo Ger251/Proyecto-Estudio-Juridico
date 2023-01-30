@@ -1,45 +1,21 @@
-
-
-
-
-
-
-
-//document.getElementById('Izquierda1').onclick = function mover (){
-
- //   console.log("capuramos el click");
-   // document.getElementById('Mov').style.transform = 'translateX(-66%)';
-
-//}
-document.getElementById('Izquierda2').onclick = function mover (){
-
-    console.log("capuramos el click");
-    document.getElementById('Mov').style.transform = 'translateX(0%)';
-
+let Contenedor =  document.getElementById('Mov');
+let Izquierda2 = document.getElementById('Izquierda2');
+let Izquierda3 = document.getElementById('Izquierda3');
+let Derecha1 = document.getElementById('Derecha1');
+let Derecha2 = document.getElementById('Derecha2');
+let mover = function (){
+    Contenedor.style.transform = 'translateX(-33.33333333%)';
+} ;
+Izquierda2.onclick = function  (){
+    Contenedor.style.transform = 'translateX(0%)';
 }
-document.getElementById('Izquierda3').onclick = function mover (){
-
-    console.log("capuramos el click");
-    document.getElementById('Mov').style.transform = 'translateX(-33.33333333%)';
-
+Izquierda3.onclick = function  (){ 
+  mover();
+}
+Derecha1.onclick = function  (){
+   mover();
+}
+Derecha2.onclick = function (){
+    Contenedor.style.transform = 'translateX(-66.6666666666%)';
 }
 
-document.getElementById('Derecha1').onclick = function mover (){
-
-    console.log("capuramos el click");
-    document.getElementById('Mov').style.transform = 'translateX(-33.33333333%)';
-
-}
-
-document.getElementById('Derecha2').onclick = function mover (){
-
-    console.log("capuramos el click");
-    document.getElementById('Mov').style.transform = 'translateX(-66.6666666666%)';
-
-}
-//document.getElementById('Derecha3').onclick = function mover (){
-
-  //  console.log("capuramos el click");
-    //document.getElementById('Mov').style.transform = 'translateX(0%)';
-
-//}
