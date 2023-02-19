@@ -300,7 +300,7 @@ html {
   list-style-type: none;
   list-style-image: url(/Imagenes/flecha.png);
 }
-
+/*---------------------------------------FORMULARIO-------------------------*/
 .Contenedor3 {
   width: 100%;
   min-height: 95vh;
@@ -403,26 +403,37 @@ textarea {
   color: #a79f8d;
   padding-left: 15px;
 }
-
+/*-------------------------HASTA FORMULARIO-------------------------------*/
 .SecFoto {
   width: 100%;
-  height: 90vh;
   flex-wrap: wrap;
-  background-image: url(/Imagenes/balanza.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  
  }
 
 .Dfoto {
   background-image: url(/Imagenes/LOGOGER.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
-  height: 100%;
+ 
+
 }
+
+@media (max-width: 840px) {
+  .SecFoto {
+   
+    
+   }
+   .Dfoto{
+    
+    min-height: 0; 
+
+   }
+
+}
+
 
 .Contenedor4 {
   display: flex;
@@ -868,4 +879,19 @@ textarea {
   font-weight: 400;
   color: #bcb095;
   font-size: 16px;
+}
+
+
+.whatsapp{
+  height: 50px;
+  width: 50px;
+ 
+  position: fixed;
+  right: 3%;
+  bottom: 2%;
+}
+.whatsapp  img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
